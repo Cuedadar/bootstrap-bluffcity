@@ -13,3 +13,14 @@
 .text-bc-light {
     color: rgb(243, 190, 71);
 }
+
+#hero-text {
+    color: white; 
+    text-align: center; 
+    z-index: 1031; 
+    width: 100%; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
