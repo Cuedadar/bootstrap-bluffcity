@@ -1,0 +1,15 @@
+.bg-bc-dark {
+    background-color: rgb(9, 14, 57);
+}
+
+.bg-bc-light {
+    background-color: rgb(243, 190, 71);
+}
+
+.text-bc-dark {
+    color: rgb(9, 14, 57);
+}
+
+.text-bc-light {
+    color: rgb(243, 190, 71);
+}

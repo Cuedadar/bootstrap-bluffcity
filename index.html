@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bluff City Construction</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+      <nav
+        class="navbar navbar-expand-sm sticky-top bg-bc-dark px-3 py-3"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <!-- Change to opposite logo with Javascript (or Bootstrap?) on scroll down -->
+            <img
+              src="assets/bluff-city-light-nav.png"
+              alt="Bluff City Construction Logo"
+              class="img-fluid"
+              width="197"
+              height="52"
+            />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Meet the Team</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero Carousel -->
+      <div
+        class="container-fluid px-0"
+        id="welcomeCarouselContainer"
+      >
+        <div id="carouselIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/bridge.jpg"
+                class="d-block w-100"
+                alt="Memphis bridge lit in blue and yellow"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://placehold.co/600x400"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://placehold.co/600x400"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+
+          <!-- Insert absolute position overlay text here -->
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- End Hero Carousel -->
+    </header>
+    <main></main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script to enable Bootstrap validation -->
+    <script>
+      // JavaScript to disable form submissions if there are invalid fields
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        forms.forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+    <script>
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 0) {
+          // Adjust 0 to a higher value if needed
+          navbar.classList.remove("bg-bc-dark"); // Or your desired color class
+          navbar.classList.add("bg-bc-light");
+
+          navbar.setAttribute("data-bs-theme", "light");
+        } else {
+          navbar.classList.remove("bg-bc-light");
+          navbar.classList.add("bg-bc-dark");
+
+          navbar.setAttribute("data-bs-theme", "dark");
+        }
+      });
+    </script>
+  </body>
+</html>
