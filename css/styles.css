@@ -60,6 +60,11 @@ main {
     flex: 1;
 }
 
+#meet-the-team {
+    scroll-margin-top: 180px;
+}
+
+
 .emp-img {
     max-width: 250px;
 }
@@ -73,3 +78,4 @@ main {
         font-size: medium !important;
     }
 }
+
