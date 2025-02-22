@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <header>
       <!-- place navbar here -->
       <nav
@@ -63,7 +63,7 @@
       </nav>
 
       <!-- Hero Carousel -->
-      <div class="container-fluid px-0" id="welcomeCarouselContainer">
+      <div class="container-xxl px-0" id="welcomeCarouselContainer">
         <!-- Insert absolute position overlay text here -->
         <div
           id="welcomeCarousel"
@@ -71,33 +71,104 @@
           style="background-color: black"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner" style="opacity: 0.45">
+          <div
+            class="carousel-inner align-content-center"
+            style="opacity: 0.65; min-height: 250px"
+          >
             <div class="carousel-item active" data-bs-interval="3000">
               <img
                 src="assets/bridge.png"
-                class="d-block w-100"
+                class="d-block w-100 object-fit-cover"
+                style="min-height: 250px"
                 alt="Memphis bridge lit in blue and yellow"
               />
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="assets/bridge3.png" class="d-block w-100" alt="..." />
+            <div class="carousel-item object-fit-cover" data-bs-interval="3000">
+              <img
+                src="assets/bridge3.png"
+                class="d-block w-100 object-fit-cover"
+                style="min-height: 250px"
+                alt="..."
+              />
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="assets/bridge2.png" class="d-block w-100" alt="..." />
+            <div class="carousel-item object-fit-cover" data-bs-interval="3000">
+              <img
+                src="assets/bridge2.png"
+                class="d-block w-100 object-fit-cover"
+                style="min-height: 250px"
+                alt="..."
+              />
             </div>
           </div>
 
           <div id="hero-text">
-            <h1 class="display-1">Building the future.</h1>
-            <h1 class="display-1">Together.</h1>
+            <h1 class="display-1" style="text-shadow: 0.25rem 0.25rem #222;">Building the future.</h1>
+            <h1 class="display-1" style="text-shadow: 0.25rem 0.25rem #222;">Together.</h1>
           </div>
         </div>
       </div>
       <!-- End Hero Carousel -->
     </header>
-    <main></main>
 
-    <footer class="container-fluid d-flex justify-content-center bg-bc-light">
+    <!-- Start Divider Banner -->
+     <!-- <div class="container-fluid bg-bc-banner" style="height: 250px;"></div> -->
+
+    <!-- Start Cards -->
+    <main style="flex: 1;">
+      <div
+        class="container d-flex justify-content-center align-content-center my-0"
+      >
+        <div class="card my-3 border-0" style="max-width: 540px">
+          <div class="row no-gutters align-items-center">
+            <div class="col-md-5">
+              <img
+                src="https://placehold.co/300?text=Person"
+                class="card-img"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">Jane Doe</h5>
+                <p class="card-text">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Nunc
+                  tristique ipsum egestas class amet sit aliquam. Semper diam
+                  sociosqu velit suspendisse ad eu volutpat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vr m-3 m-md-200" style="z-index: 9999"></div>
+
+        <div class="card my-3 border-0" style="max-width: 540px">
+          <div class="row no-gutters align-items-center">
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">John Doe</h5>
+                <p class="card-text">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Nunc
+                  tristique ipsum egestas class amet sit aliquam. Semper diam
+                  sociosqu velit suspendisse ad eu volutpat.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <img
+                src="https://placehold.co/300?text=Person"
+                class="card-img"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="container-fluid d-flex justify-content-center bg-bc-light"
+    >
       <p class="m-3">&copy; 2025 John King. All Rights Reserved.</p>
     </footer>
 
