@@ -18,6 +18,10 @@
     color: rgb(243, 190, 71);
 }
 
+header {
+    z-index: 1040;
+}
+
 #hero-text {
     color: white; 
     text-align: center; 
@@ -29,6 +33,36 @@
     transform: translate(-50%, -50%);
 }
 
+#hero-text p {
+    text-shadow: 0.25rem 0.25rem #444;
+}
+
+#welcomeCarousel {
+    background-color: black;
+}
+
+#carousel-images {
+    opacity: 0.65; 
+    min-height: 250px;
+}
+
+#carousel-images div img {
+    min-height: 250px;
+}
+
+#divider-banner {
+    min-height: 200px;
+}
+
+#divider-banner h4 {
+    text-align: center; 
+    color: black;
+}
+
+main {
+    flex: 1;
+}
+
 .emp-img {
     max-width: 250px;
 }
@@ -36,9 +70,3 @@
 .emp-txt {
     max-width: 500px;
 }
-
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: xx-large !important;
-    }
-  }
