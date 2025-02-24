@@ -1,175 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>Bluff City Construction</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link href="favicon.ico" rel="icon" />
-  </head>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link href="favicon.ico" rel="icon"/>
+</head>
 
-  <body class="d-flex flex-column min-vh-100">
-    <header class="sticky-top">
-      <nav
-        class="navbar navbar-expand-sm bg-bc-dark px-3 py-3"
-        data-bs-theme="dark"
-      >
+<body class="d-flex flex-column min-vh-100">
+<header class="sticky-top">
+    <nav
+            class="navbar navbar-expand-sm bg-bc-dark px-3 py-3"
+            data-bs-theme="dark"
+    >
         <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarContent"
-            aria-controls="navbarContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <!-- Change to opposite logo with Javascript (or Bootstrap?) on scroll down? -->
-            <img
-              src="assets/bluff-city-light-nav.png"
-              alt="Bluff City Construction Logo"
-              class="img-fluid"
-              width="197"
-              height="52"
-            />
-          </a>
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#meet-the-team">Meet the Team</a>
-              </li>
-            </ul>
-          </div>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent"
+                    aria-controls="navbarContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <!-- Change to opposite logo with Javascript (or Bootstrap?) on scroll down? -->
+                <img
+                        src="assets/bluff-city-light-nav.png"
+                        alt="Bluff City Construction Logo"
+                        class="img-fluid"
+                        width="197"
+                        height="52"
+                />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main">Meet the Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-form">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-    <!-- Hero Carousel -->
-    <div class="container-fluid px-0" id="welcomeCarouselContainer">
-      <div id="welcomeCarousel" class="carousel slide" data-bs-ride="carousel">
+<!-- Hero Carousel -->
+<div class="container-fluid px-0" id="welcomeCarouselContainer">
+    <div id="welcomeCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner align-content-center" id="carousel-images">
-          <div id="hero-text">
-            <p class="display-1 fw-bold px-2">Building the future.</p>
-            <p class="display-1 fw-bold px-2">Together.</p>
-          </div>
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img
-              src="assets/bridge.png"
-              class="d-block w-100 object-fit-cover"
-              alt="Memphis bridge lit in blue and yellow"
-            />
-          </div>
-          <div class="carousel-item object-fit-cover" data-bs-interval="3000">
-            <img
-              src="assets/bridge3.png"
-              class="d-block w-100 object-fit-cover"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item object-fit-cover" data-bs-interval="3000">
-            <img
-              src="assets/bridge2.png"
-              class="d-block w-100 object-fit-cover"
-              alt="..."
-            />
-          </div>
+            <div id="hero-text">
+                <p class="display-1 fw-bold px-2">Building the future.</p>
+                <p class="display-1 fw-bold px-2">Together.</p>
+            </div>
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img
+                        src="assets/bridge.png"
+                        class="d-block w-100 object-fit-cover"
+                        alt="Memphis bridge lit in blue and yellow"
+                />
+            </div>
+            <div class="carousel-item object-fit-cover" data-bs-interval="3000">
+                <img
+                        src="assets/bridge3.png"
+                        class="d-block w-100 object-fit-cover"
+                        alt="..."
+                />
+            </div>
+            <div class="carousel-item object-fit-cover" data-bs-interval="3000">
+                <img
+                        src="assets/bridge2.png"
+                        class="d-block w-100 object-fit-cover"
+                        alt="..."
+                />
+            </div>
         </div>
-      </div>
     </div>
-    <!-- End Hero Carousel -->
-
+</div>
+<!-- End Hero Carousel -->
+<main id="main">
     <!-- Start Divider Banner -->
     <div
-      class="container-fluid d-flex bg-bc-banner align-items-center"
-      id="divider-banner"
+            class="container-fluid d-flex bg-bc-banner align-items-center"
+            id="divider-banner"
     >
-      <h4 class="px-4 py-5">
-        Proudly building in the heart of Memphis, we're a construction company
-        passionate about the positive impact we have on our community. We're
-        your neighbors, dedicated to creating sustainable and resilient
-        infrastructure for generations to come.
-      </h4>
+        <h4 class="px-4 py-5">
+            Proudly building in the heart of Memphis, we're a construction company
+            passionate about the positive impact we have on our community. We're
+            your neighbors, dedicated to creating sustainable and resilient
+            infrastructure for generations to come.
+        </h4>
     </div>
-
-    <main>
-      <!-- Start Cards -->
-      <div
-        class="container d-flex justify-content-center align-content-center my-0"
-        id="meet-the-team"
-      >
+    <!-- Start Cards -->
+    <div
+            class="container d-flex justify-content-center align-content-center my-0"
+            id="meet-the-team"
+    >
         <!-- Start card row -->
         <div class="col">
-          <!-- Start card -->
-          <div class="card my-3 border-0" style="max-width: 540px">
-            <!-- Start inner card -->
-            <div class="row no-gutters align-items-center">
-              <div class="col-md-5">
-                <img
-                  src="https://placehold.co/300?text=Person"
-                  class="card-img"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-7">
-                <div class="card-body">
-                  <h5 class="card-title">Jane Doe</h5>
-                  <p class="card-text">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Nunc
-                    tristique ipsum egestas class amet sit aliquam. Semper diam
-                    sociosqu velit suspendisse ad eu volutpat.
-                  </p>
+            <!-- Start card -->
+            <div class="card my-3 border-0" style="max-width: 540px">
+                <!-- Start inner card -->
+                <div class="row no-gutters align-items-center">
+                    <div class="col-md-5">
+                        <img
+                                src="https://placehold.co/300?text=Person"
+                                class="card-img"
+                                alt="..."
+                        />
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-title">Jane Doe</h5>
+                            <p class="card-text">
+                                Lorem ipsum odor amet, consectetuer adipiscing elit. Nunc
+                                tristique ipsum egestas class amet sit aliquam. Semper diam
+                                sociosqu velit suspendisse ad eu volutpat.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End inner card -->
                 </div>
-              </div>
-              <!-- End inner card -->
+                <!-- End Card -->
+            </div>
+
+            <hr style="z-index: 1"/>
+
+            <!-- Start Card -->
+            <div class="card my-3 border-0" style="max-width: 540px">
+                <!-- Start Inner Card -->
+                <div class="row no-gutters align-items-center">
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-title">Cathy Doe</h5>
+                            <p class="card-text">
+                                Lorem ipsum odor amet, consectetuer adipiscing elit. Nunc
+                                tristique ipsum egestas class amet sit aliquam. Semper diam
+                                sociosqu velit suspendisse ad eu volutpat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img
+                                src="https://placehold.co/300?text=Person"
+                                class="card-img"
+                                alt="..."
+                        />
+                    </div>
+                </div>
+                <!-- End Inner Card -->
             </div>
             <!-- End Card -->
-          </div>
-
-          <hr style="z-index: 1" />
-
-          <!-- Start Card -->
-          <div class="card my-3 border-0" style="max-width: 540px">
-            <!-- Start Inner Card -->
-            <div class="row no-gutters align-items-center">
-              <div class="col-md-7">
-                <div class="card-body">
-                  <h5 class="card-title">Cathy Doe</h5>
-                  <p class="card-text">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Nunc
-                    tristique ipsum egestas class amet sit aliquam. Semper diam
-                    sociosqu velit suspendisse ad eu volutpat.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <img
-                  src="https://placehold.co/300?text=Person"
-                  class="card-img"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <!-- End Inner Card -->
-          </div>
-          <!-- End Card -->
         </div>
         <!-- End card row -->
 
@@ -177,86 +178,115 @@
 
         <!-- Start Card Row -->
         <div class="col">
-          <!-- Start Card -->
-          <div class="card my-3 border-0" style="max-width: 540px">
-            <!-- Start Inner Card -->
-            <div class="row no-gutters align-items-center">
-              <div class="col-md-5">
-                <img
-                  src="https://placehold.co/300?text=Person"
-                  class="card-img"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-7">
-                <div class="card-body">
-                  <h5 class="card-title">John Doe</h5>
-                  <p class="card-text">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Nunc
-                    tristique ipsum egestas class amet sit aliquam. Semper diam
-                    sociosqu velit suspendisse ad eu volutpat.
-                  </p>
+            <!-- Start Card -->
+            <div class="card my-3 border-0" style="max-width: 540px">
+                <!-- Start Inner Card -->
+                <div class="row no-gutters align-items-center">
+                    <div class="col-md-5">
+                        <img
+                                src="https://placehold.co/300?text=Person"
+                                class="card-img"
+                                alt="..."
+                        />
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="card-text">
+                                Lorem ipsum odor amet, consectetuer adipiscing elit. Nunc
+                                tristique ipsum egestas class amet sit aliquam. Semper diam
+                                sociosqu velit suspendisse ad eu volutpat.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <!-- End Inner Card -->
             </div>
-            <!-- End Inner Card -->
-          </div>
-          <!-- End card -->
+            <!-- End card -->
 
-          <hr style="z-index: 1" />
+            <hr style="z-index: 1"/>
 
-          <!-- Start Card -->
-          <div class="card my-3 border-0" style="max-width: 540px">
-            <!-- Start Inner card -->
-            <div class="row no-gutters align-items-center">
-              <div class="col-md-7">
-                <div class="card-body">
-                  <h5 class="card-title">Louis Doe</h5>
-                  <p class="card-text">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Nunc
-                    tristique ipsum egestas class amet sit aliquam. Semper diam
-                    sociosqu velit suspendisse ad eu volutpat.
-                  </p>
+            <!-- Start Card -->
+            <div class="card my-3 border-0" style="max-width: 540px">
+                <!-- Start Inner card -->
+                <div class="row no-gutters align-items-center">
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-title">Louis Doe</h5>
+                            <p class="card-text">
+                                Lorem ipsum odor amet, consectetuer adipiscing elit. Nunc
+                                tristique ipsum egestas class amet sit aliquam. Semper diam
+                                sociosqu velit suspendisse ad eu volutpat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img
+                                src="https://placehold.co/300?text=Person"
+                                class="card-img"
+                                alt="..."
+                        />
+                    </div>
+                    <!-- End Image -->
                 </div>
-              </div>
-              <div class="col-md-5">
-                <img
-                  src="https://placehold.co/300?text=Person"
-                  class="card-img"
-                  alt="..."
-                />
-              </div>
-              <!-- End Image -->
+                <!-- End Card Inner -->
             </div>
-            <!-- End Card Inner -->
-          </div>
-          <!-- End Card -->
+            <!-- End Card -->
         </div>
         <!-- End Card Row -->
-      </div>
-      <!-- End Cards -->
-    </main>
+    </div>
+    <!-- End Cards -->
 
-    <footer class="container-fluid d-flex justify-content-center bg-bc-light">
-      <p class="m-3">&copy; 2025 John King. All Rights Reserved.</p>
-    </footer>
+    <!-- Start Contact-->
+    <div
+            class="container-fluid d-flex flex-column bg-bc-banner align-items-center pt-5 pb-5"
+            id="contact-form"
+    >
+        <h2 class="text-center display-5">
+            Contact Us
+        </h2>
 
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+        <form class="container d-flex justify-content-center align-content-center flex-column needs-validation"
+              id="contact-form-form" style="max-width: 700px" novalidate>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter your email" required/>
+                <div class="invalid-feedback">
+                    Please enter a valid email address.
+                </div>
+            </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Script to enable Bootstrap validation -->
-    <script>
-      // JavaScript to disable form submissions if there are invalid fields
-      (() => {
+            <div class="form-group my-3">
+                <textarea class="form-control" rows="3" placeholder="Enter your message" required></textarea>
+                <div class="invalid-feedback">
+                    Please enter a message.
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</main>
+
+<footer class="container-fluid d-flex justify-content-center bg-bc-dark">
+    <p class="m-3" style="color: lightgray">&copy; 2025 John King. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JavaScript Libraries -->
+<script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+></script>
+
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+></script>
+<!-- Script to enable Bootstrap validation -->
+<script>
+    // JavaScript to disable form submissions if there are invalid fields
+    (() => {
         "use strict";
 
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -264,28 +294,30 @@
 
         // Loop over them and prevent submission
         forms.forEach((form) => {
-          form.addEventListener(
-            "submit",
-            (event) => {
-              if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
+            form.addEventListener(
+                "submit",
+                (event) => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
 
-              form.classList.add("was-validated");
-            },
-            false
-          );
+                    form.classList.add("was-validated");
+                },
+                false
+            );
         });
-      })();
-    </script>
+    })();
+</script>
 
-    <script>
-      Array.from(document.querySelectorAll(".nav-link")).forEach((item) => {
+<script>
+    Array.from(document.querySelectorAll(".nav-link")).forEach((item) => {
         item.addEventListener("click", (event) => {
-          new bootstrap.Collapse(document.getElementById("navbarContent")).hide();
+            if (window.innerWidth < 768) {
+                new bootstrap.Collapse(document.getElementById("navbarContent")).hide();
+            }
         });
-      });
-    </script>
-  </body>
+    });
+</script>
+</body>
 </html>
