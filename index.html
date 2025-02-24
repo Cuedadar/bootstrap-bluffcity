@@ -51,22 +51,10 @@
           <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  ><span
-                    data-bs-target="#navbarContent"
-                    data-bs-toggle="collapse"
-                    >Home</span
-                  ></a
-                >
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#meet-the-team"
-                  ><span
-                    data-bs-target="#navbarContent"
-                    data-bs-toggle="collapse"
-                    >Meet the Team</span
-                  ></a
-                >
+                <a class="nav-link" href="#meet-the-team">Meet the Team</a>
               </li>
             </ul>
           </div>
@@ -121,14 +109,17 @@
       </h4>
     </div>
 
-    <!-- Start Cards -->
     <main>
+      <!-- Start Cards -->
       <div
         class="container d-flex justify-content-center align-content-center my-0"
         id="meet-the-team"
       >
+        <!-- Start card row -->
         <div class="col">
+          <!-- Start card -->
           <div class="card my-3 border-0" style="max-width: 540px">
+            <!-- Start inner card -->
             <div class="row no-gutters align-items-center">
               <div class="col-md-5">
                 <img
@@ -147,12 +138,16 @@
                   </p>
                 </div>
               </div>
+              <!-- End inner card -->
             </div>
+            <!-- End Card -->
           </div>
 
           <hr style="z-index: 1" />
 
+          <!-- Start Card -->
           <div class="card my-3 border-0" style="max-width: 540px">
+            <!-- Start Inner Card -->
             <div class="row no-gutters align-items-center">
               <div class="col-md-7">
                 <div class="card-body">
@@ -172,13 +167,19 @@
                 />
               </div>
             </div>
+            <!-- End Inner Card -->
           </div>
+          <!-- End Card -->
         </div>
+        <!-- End card row -->
 
         <div class="vr m-3 m-md-200" style="z-index: 1"></div>
 
+        <!-- Start Card Row -->
         <div class="col">
+          <!-- Start Card -->
           <div class="card my-3 border-0" style="max-width: 540px">
+            <!-- Start Inner Card -->
             <div class="row no-gutters align-items-center">
               <div class="col-md-5">
                 <img
@@ -198,11 +199,15 @@
                 </div>
               </div>
             </div>
+            <!-- End Inner Card -->
           </div>
+          <!-- End card -->
 
           <hr style="z-index: 1" />
 
+          <!-- Start Card -->
           <div class="card my-3 border-0" style="max-width: 540px">
+            <!-- Start Inner card -->
             <div class="row no-gutters align-items-center">
               <div class="col-md-7">
                 <div class="card-body">
@@ -221,10 +226,15 @@
                   alt="..."
                 />
               </div>
+              <!-- End Image -->
             </div>
+            <!-- End Card Inner -->
           </div>
+          <!-- End Card -->
         </div>
+        <!-- End Card Row -->
       </div>
+      <!-- End Cards -->
     </main>
 
     <footer class="container-fluid d-flex justify-content-center bg-bc-light">
@@ -269,22 +279,13 @@
         });
       })();
     </script>
-    <!-- <script>
-      window.addEventListener("scroll", () => {
-        const navbar = document.querySelector(".navbar");
-        if (window.scrollY > 0) {
-          // Adjust 0 to a higher value if needed
-          navbar.classList.remove("bg-bc-dark"); // Or your desired color class
-          navbar.classList.add("bg-bc-light");
 
-          navbar.setAttribute("data-bs-theme", "light");
-        } else {
-          navbar.classList.remove("bg-bc-light");
-          navbar.classList.add("bg-bc-dark");
-
-          navbar.setAttribute("data-bs-theme", "dark");
-        }
+    <script>
+      Array.from(document.querySelectorAll(".nav-link")).forEach((item) => {
+        item.addEventListener("click", (event) => {
+          new bootstrap.Collapse(document.getElementById("navbarContent")).hide();
+        });
       });
-    </script> -->
+    </script>
   </body>
 </html>
