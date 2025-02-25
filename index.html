@@ -9,6 +9,9 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <meta name="description"
+          content="Bluff City Construction is a construction company based in Memphis, TN. We are dedicated to creating sustainable and resilient infrastructure for generations to come."/>
+
     <!-- Bootstrap CSS v5.2.1 -->
     <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -17,14 +20,16 @@
             crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css"/>
-    <link href="favicon.ico" rel="icon"/>
+    <link href="favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
 
-<body class="d-flex flex-column min-vh-100" data-bs-spy="scroll" data-bs-target="body" data-bs-root-margin="0px 0px -20%">
+<body class="d-flex flex-column min-vh-100" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="93"
+>
 <header class="fixed-top">
     <nav
             class="navbar navbar-expand-sm bg-bc-dark px-3 py-3"
             data-bs-theme="dark"
+            id="navbar"
     >
         <div class="container-fluid">
             <button
@@ -59,48 +64,54 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact-form">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects-table">Current Projects</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
 
-<main style="margin-top: 93px">
-<!-- Hero Carousel -->
-<div class="container-fluid px-0" id="welcomeCarouselContainer">
-    <div id="welcomeCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner align-content-center" id="carousel-images">
-            <div id="hero-text">
-                <p class="display-1 fw-bold px-2">Building the future.</p>
-                <p class="display-1 fw-bold px-2">Together.</p>
+<main>
+
+    <!-- Hero Carousel -->
+    <div class="container-fluid px-0" id="welcomeCarouselContainer">
+        <section id="welcomeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner align-content-center" id="carousel-images">
+                <div id="hero-text">
+                    <h1 class="display-1 fw-bold px-2">Building the future.</h1>
+                    <h1 class="display-1 fw-bold px-2">Together.</h1>
+                </div>
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img
+                            src="assets/bridge.png"
+                            class="d-block w-100 object-fit-cover"
+                            alt="Memphis bridge lit in blue and yellow"
+                    />
+                </div>
+                <div class="carousel-item object-fit-cover" data-bs-interval="3000">
+                    <img
+                            src="assets/bridge3.png"
+                            class="d-block w-100 object-fit-cover"
+                            alt="A modern bridge illuminated at night with a glowing city skyline in the background"
+
+                    />
+                </div>
+                <div class="carousel-item object-fit-cover" data-bs-interval="3000">
+                    <img
+                            src="assets/bridge2.png"
+                            class="d-block w-100 object-fit-cover"
+                            alt="A wide view of a bridge during sunset with dramatic sky colors"
+                    />
+                </div>
             </div>
-            <div class="carousel-item active" data-bs-interval="3000">
-                <img
-                        src="assets/bridge.png"
-                        class="d-block w-100 object-fit-cover"
-                        alt="Memphis bridge lit in blue and yellow"
-                />
-            </div>
-            <div class="carousel-item object-fit-cover" data-bs-interval="3000">
-                <img
-                        src="assets/bridge3.png"
-                        class="d-block w-100 object-fit-cover"
-                        alt="..."
-                />
-            </div>
-            <div class="carousel-item object-fit-cover" data-bs-interval="3000">
-                <img
-                        src="assets/bridge2.png"
-                        class="d-block w-100 object-fit-cover"
-                        alt="..."
-                />
-            </div>
-        </div>
+        </section>
     </div>
-</div>
-<!-- End Hero Carousel -->
+    <!-- End Hero Carousel -->
+
     <!-- Start Divider Banner -->
-    <div
+    <section
             class="container-fluid d-flex bg-bc-banner align-items-center"
             id="divider-banner"
     >
@@ -110,15 +121,15 @@
             your neighbors, dedicated to creating sustainable and resilient
             infrastructure for generations to come.
         </h4>
-    </div>
+    </section>
+
     <!-- Start Cards -->
-    <div
+    <section
             class="container d-flex justify-content-center align-content-center my-0"
             id="meet-the-team">
         <!-- Start card row -->
         <div class="col">
-            <!-- Start card -->
-            <div class="card my-3 border-0" style="max-width: 540px">
+            <article class="card my-3 border-0" style="max-width: 540px">
                 <!-- Start inner card -->
                 <div class="row no-gutters align-items-center">
                     <div class="col-md-5">
@@ -138,15 +149,12 @@
                             </p>
                         </div>
                     </div>
-                    <!-- End inner card -->
                 </div>
-                <!-- End Card -->
-            </div>
+            </article>
 
             <hr style="z-index: 1"/>
 
-            <!-- Start Card -->
-            <div class="card my-3 border-0" style="max-width: 540px">
+            <article class="card my-3 border-0" style="max-width: 540px">
                 <!-- Start Inner Card -->
                 <div class="row no-gutters align-items-center">
                     <div class="col-md-7">
@@ -167,9 +175,7 @@
                         />
                     </div>
                 </div>
-                <!-- End Inner Card -->
-            </div>
-            <!-- End Card -->
+            </article>
         </div>
         <!-- End card row -->
 
@@ -177,8 +183,7 @@
 
         <!-- Start Card Row -->
         <div class="col">
-            <!-- Start Card -->
-            <div class="card my-3 border-0" style="max-width: 540px">
+            <article class="card my-3 border-0" style="max-width: 540px">
                 <!-- Start Inner Card -->
                 <div class="row no-gutters align-items-center">
                     <div class="col-md-5">
@@ -199,14 +204,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- End Inner Card -->
-            </div>
-            <!-- End card -->
+            </article>
 
             <hr style="z-index: 1"/>
 
-            <!-- Start Card -->
-            <div class="card my-3 border-0" style="max-width: 540px">
+            <article class="card my-3 border-0" style="max-width: 540px">
                 <!-- Start Inner card -->
                 <div class="row no-gutters align-items-center">
                     <div class="col-md-7">
@@ -226,19 +228,16 @@
                                 alt="..."
                         />
                     </div>
-                    <!-- End Image -->
                 </div>
-                <!-- End Card Inner -->
-            </div>
-            <!-- End Card -->
+            </article>
         </div>
         <!-- End Card Row -->
-    </div>
+    </section>
     <!-- End Cards -->
 
     <!-- Start Contact-->
-    <div
-            class="container-fluid d-flex flex-column bg-bc-banner align-items-center pt-5 pb-5"
+    <section
+            class="container-fluid d-flex flex-column bg-bc-banner align-items-center py-5 my-5"
             id="contact-form"
     >
         <h2 class="text-center display-5">
@@ -261,48 +260,121 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary my-3 py-2">Submit</button>
         </form>
-    </div>
+    </section>
     <!--    End Contact Container -->
 
-    <div class="container table-responsive-md">
-    <table class="table table-striped table-hover">
-        <thead>
-        <tr>
-            <th scope="col" colspan="4">Project Name</th>
-            <th scope="col">Type</th>
-            <th scope="col">State ID</th>
-            <th scope="col" style="text-align: center">Date Start</th>
-            <th scope="col" style="text-align: center">Proj Date End</th>
-            <th scope="col">Status</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row" colspan="4">Project Phoenix</th>
-            <td>Secret</td>
-            <td>00790210</td>
-            <td style="white-space: nowrap; text-align: center">12-2-24</td>
-            <td style="white-space: nowrap; text-align: center">5-4-25</td>
-            <td>On Time</td>
-        </tr>
-<!--
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-        </tr>
-        -->
-        </tbody>
-    </table>
-    </div>
+    <section class="container table-responsive-md" id="projects-table">
+        <table class="table table-striped table-hover">
+            <thead>
+            <tr>
+                <th scope="col" colspan="4">Project Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">State ID</th>
+                <th scope="col" style="text-align: center">Date Start</th>
+                <th scope="col" style="text-align: center">Proj Date End</th>
+                <th scope="col">Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row" colspan="4">Project Phoenix</th>
+                <td>Secret</td>
+                <td>00790210</td>
+                <td style="white-space: nowrap; text-align: center">12-2-24</td>
+                <td style="white-space: nowrap; text-align: center">5-4-25</td>
+                <td>On Time</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4">Bridge Repair Group</th>
+                <td>Govt</td>
+                <td>24358463</td>
+                <td style="white-space: nowrap; text-align: center">12-2-24</td>
+                <td style="white-space: nowrap; text-align: center">5-4-25</td>
+                <td>Delayed</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4">Urban Builders Co.</th>
+                <td>Consult</td>
+                <td>09823439</td>
+                <td style="white-space: nowrap; text-align: center">12-2-24</td>
+                <td style="white-space: nowrap; text-align: center">5-4-25</td>
+                <td>Not Started</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4">Memphis Steelworks</th>
+                <td>Govt</td>
+                <td>01592536</td>
+                <td style="white-space: nowrap; text-align: center">12-2-24</td>
+                <td style="white-space: nowrap; text-align: center">5-4-25</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4">River Stone Construction</th>
+                <td>Commercial</td>
+                <td>92649374</td>
+                <td style="white-space: nowrap; text-align: center; font-family: monospace" >12-2-24</td>
+                <td style="white-space: nowrap; text-align: center">5-4-25</td>
+                <td>Ahead of Schedule</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4">Modern Builders Inc.</th>
+                <td>Govt</td>
+                <td>30561932</td>
+                <td style="white-space: nowrap; text-align: center">12-2-24</td>
+                <td style="white-space: nowrap; text-align: center">5-4-25</td>
+                <td>On Time</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4">Highway Masters</th>
+                <td>Govt</td>
+                <td>62393645</td>
+                <td style="white-space: nowrap; text-align: center">12-2-24</td>
+                <td style="white-space: nowrap; text-align: center">5-4-25</td>
+                <td>On Time</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4">Gold Standard Homes</th>
+                <td>Govt</td>
+                <td>67190374</td>
+                <td style="white-space: nowrap; text-align: center">12-2-24</td>
+                <td style="white-space: nowrap; text-align: center">5-4-25</td>
+                <td>Under Review</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4">Pioneer Engineering</th>
+                <td>Consult</td>
+                <td>74923017</td>
+                <td style="white-space: nowrap; text-align: center">12-2-24</td>
+                <td style="white-space: nowrap; text-align: center">5-4-25</td>
+                <td>Testing/Inspection</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4">Brickstone Contractors</th>
+                <td>Commercial</td>
+                <td>54590167</td>
+                <td style="white-space: nowrap; text-align: center">12-2-24</td>
+                <td style="white-space: nowrap; text-align: center">5-4-25</td>
+                <td>Pending Resources</td>
+            </tr>
+
+            <!--
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    -->
+            </tbody>
+        </table>
+    </section>
 </main>
 
 <footer class="container-fluid d-flex justify-content-center bg-bc-dark" data-bs-spy="scroll">
@@ -321,6 +393,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"
 ></script>
+
 <!-- Script to enable Bootstrap validation -->
 <script>
     // JavaScript to disable form submissions if there are invalid fields
@@ -357,5 +430,6 @@
         });
     });
 </script>
+
 </body>
 </html>
