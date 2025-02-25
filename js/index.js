@@ -37,7 +37,7 @@ function filterTableByName(name) {
 }
 
 // Add listener to close navbar when nav-item a tag is clicked/tapped
-// I understand this code, but did not write it. Comments included to demonstrate understanding
+// I understand this code, but did not originally write it. Comments included to demonstrate understanding
 // Please do not include this as part of grading for my project. I do not claim this code as my own.
 
 // PROBLEM: On mobile devices, navbar menu does not automatically close when selecting a menu item.

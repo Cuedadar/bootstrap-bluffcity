@@ -86,6 +86,9 @@ main {
     scroll-margin-top: 93px !important;
 }
 
+.emp-card {
+    max-width: 540px
+}
 
 .emp-img {
     max-width: 250px;
@@ -95,8 +98,16 @@ main {
     max-width: 500px;
 }
 
+.rule-index {
+    z-index: 1;
+}
+
 #contact-form {
     scroll-margin-top: 93px;
+}
+
+#contact-form-form {
+    max-width: 700px;
 }
 
 tbody tr th {
@@ -106,6 +117,19 @@ tbody tr th {
 
 tbody tr td {
     font-family: monospace;
+}
+
+.date-header {
+    text-align: center;
+}
+
+.date-cell {
+    white-space: nowrap;
+    text-align: center;
+}
+
+footer p {
+    color: lightgray;
 }
 
 @media screen and (max-width: 768px) {
