@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .bg-bc-dark {
     background-color: rgb(9, 14, 57);
 }
@@ -48,6 +51,10 @@ header {
     text-shadow: 0.25rem 0.25rem #444;
 }
 
+#welcomeCarouselContainer {
+    scroll-margin-top: 93px;
+}
+
 #welcomeCarousel {
     background-color: black;
     z-index: 1;
@@ -72,7 +79,7 @@ main {
 }
 
 #meet-the-team {
-    scroll-margin-top: 52px;
+    scroll-margin-top: 93px !important;
 }
 
 
@@ -82,6 +89,10 @@ main {
 
 .emp-txt {
     max-width: 500px;
+}
+
+#contact-form {
+    scroll-margin-top: 93px;
 }
 
 @media screen and (max-width: 768px) {
